@@ -4,36 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oluwabusayo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="profile">
-      <div class="username">
-        <h1 data-testid="slackUserName"></h1>
+      <div>
+        <div class="profilepic">
+          <img
+            src="./assets/me.jpg"
+            data-testid="slackDisplayImage"
+            alt="Olawumi Oluwabusayo"
+          />
+        </div>
       </div>
-      <div class="picture">
-        <img
-          src="./utils/me.jpg"
-          data-testid="slackDisplayImage"
-          alt="Olawumi Oluwabusayo"
-        />
-      </div>
-      <div class="currentDay">
-        <p data-testid="currentDayOfTheWeek"></p>
-      </div>
-      <div class="utcTime">
-        <p data-testid="currentUTCTime"></p>
-      </div>
-      <div class="track">
-        <p data-testid="myTrack">Frontend track</p>
-      </div>
-      <div class="github">
-        <a
-          href="https://github.com/busayolawumi/oluwabusayo1.git"
-          target="_blank"
-          data-testid="githubURL"
-          >Github</a
-        >
+      <div>
+        <div class="username">
+          <h1 data-testid="slackUserName"></h1>
+        </div>
+        <div class="currentDay">
+          <p data-testid="currentDayOfTheWeek"></p>
+        </div>
+        <div class="utcTime">
+          <p data-testid="currentUTCTime"></p>
+        </div>
+        <div class="track">
+          <p data-testid="myTrack">Frontend Track</p>
+        </div>
+        <div class="github">
+          <a
+            href="https://github.com/busayolawumi/oluwabusayo1.git"
+            target="_blank"
+            data-testid="githubURL"
+            >Github</a
+          >
+        </div>
       </div>
     </div>
 
