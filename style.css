@@ -12,7 +12,6 @@ html {
 }
 
 .profile {
-  /*put the internal content in the center*/
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -25,7 +24,6 @@ html {
 body {
   background-color: #f0f0f0;
   text-align: center;
-  /*put the whole body in the center*/
   display: flex;
   justify-content: center;
   align-items: center;
