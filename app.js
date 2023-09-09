@@ -30,15 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
   ];
-
+  
+  const getUTCTime = () => {
   const time = Date.now();
   const date = new Date(time);
   const monthIndex = date.getMonth();
 
   const monthName = months[monthIndex];
 
-  const getUTCTime = () => {
-    console.log(date.getDate())
     return `${date.getDate()}, ${monthName} ${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
   };
 
