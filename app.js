@@ -20,10 +20,28 @@ document.addEventListener("DOMContentLoaded", () => {
     return daysOfTheWeek[today.getUTCDay()];
   };
 
+  // const getUTCTime = () => {
+  //   const time = new Date();
+  //   console.log(time.getTime())
+  //   return time.toUTCString();
+  // };
+
+  const months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+
+  const time = Date.now();
+  const date = new Date(time);
+  const monthIndex = date.getMonth();
+
+  const monthName = months[monthIndex];
+
   const getUTCTime = () => {
-    const time = new Date();
-    return time.toUTCString();
+    console.log(date.getDate())
+    return `${date.getDate()}, ${monthName} ${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
   };
+
 
   currentDay.textContent = getCurrentDayOfTheWeek();
   utcTime.textContent = getUTCTime();

@@ -13,9 +13,8 @@ html {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
-  width: 80%;
-  padding: 100px 0;
+  justify-content: center;
+  padding: 50px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: #f0f0f0;
